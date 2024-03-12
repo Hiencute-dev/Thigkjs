@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" 
+    integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+    <link rel="stylesheet" href="./dulich.css">
+
+</head>
+<body >
+    <!-- onload="listProducts()" -->
+    
+  <h2 >Du lịch 4 phương</h2>
+  <form action="nhap">
+ Địa điểm: <br>
+   <input type="text"  id="location"> <br>
+  Hình ảnh:<br>
+  <input type="file" id="image"><br><br>
+  Giới thiệu: <br>
+   <input type="text" id="introduce"><br>
+   
+   
+   Thời gian đi: <br>
+   <input type="date"  id="time_di"><br>
+   Thời gian về:
+   <br> <input type="date" id="time_ve"> <br>
+  Giá:
+   <br> <input type="text" id="price"> <br>
+   <br>
+   <input type="button" value="save" onclick="save()">
+   <input type="button" value="show" onclick="show()">
+   <input type="button" value="reset" onclick="reset()">
+   <br><br>
+</form>
+   <table class="table" border="1">
+    <thead >
+        <tr>
+            <th>Id</th>
+            <th >Địa điểm</th>
+            <th >Hình ảnh</th>
+            <th >Giới thiệu</th>
+            <th >Thời gian đi</th>
+            <th >Thời gian về</th>
+            <th >Giá</th>
+            <th>Mua Hàng</th>
+            
+        </tr>
+        
+        
+        
+    </thead>
+    <tbody id="tbl"></tbody>
+    
+   </table>
+
+</body>
+<script src="./dulich.js"></script>
+</html>
