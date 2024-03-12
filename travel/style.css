@@ -2,6 +2,10 @@
     background-color: #ad85b8;
     padding: 10px;
   } */
+  h1{
+    color: brown;
+    text-align: center;
+  }
 
   button.btn.btn-primary.bt {
     margin-right: 15px;

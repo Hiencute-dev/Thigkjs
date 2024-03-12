@@ -1,17 +1,17 @@
 var tour =[
   {
      id: 1,
-     name: "PHÚ QUỐC",
-     content: "Được mệnh danh là hòn đảo lớn nhất Việt Nam, du lịch Phú Quốc may mắn được thiên nhiên ưu đãi với làn nước trong, bờ cát trắng mịn, và những khu rừng hoang sơ. Lỡ lạc chân vào “đảo ngọc” rồi, hãy tận hưởng một chút “Vitamin Sea” trong cái nắng dịu nhẹ ở Bãi Dài phía tây Phú Quốc và Bãi Sao phía đông Phú Quốc. Du lịch Phú Quốc không chỉ có biển, hãy thử các trải nghiệm thú vị khác như khám phá hòn đảo bằng xe máy, tham quan công viên bảo tồn động vật Vinpearl Safari, lặn san hô, hay chèo thuyền kayak. Cuối cùng, đừng quên thưởng thức các món hải sản ngon tuyệt vời khi du lịch Phú Quốc tự túc nhé!",
+     name: "  HÀN QUỐC",
+     content: "Hàn Quốc là một quốc gia thuộc khu vực Đông Á, sở hữu địa hình đồi núi hiểm trở với nhiều eo biển trải dài. Thông qua các bộ phim Hàn nổi tiếng, “xứ sở kim chi” được biết đến như một đất nước xinh đẹp, cảnh sắc vừa hùng vĩ vừa nên thơ. Đặc biệt, quốc gia này còn nổi tiếng với nền ẩm thực đa dạng và sự phát triển của văn hóa phim ảnh, âm nhạc.Hãy đặt chân tới mảnh đất này để cùng hòa mình vào nét đẹp của văn hóa nước này.",
      price: "10.000.000",
      timedi: "12/03/2024",
      timeve: "18/03/2024",
-     image: "https://yentravel.com.vn/public/upload/images/dao-ngoc-phu-quoc(1).jpg"
+     image: "https://th.bing.com/th?q=Lich+Su+Han+Quoc&w=138&h=138&c=7&o=5&dpr=1.5&pid=1.7&mkt=en-WW&cc=VN&setlang=en&adlt=strict"
   },
 
   {
       id: 2,
-      name: "ĐÀ LẠT",
+      name: "  ĐÀ LẠT",
       content: "Sở hữu vẻ đẹp nên thơ, trữ tình với những rừng thông bạt ngàn, những cánh đồng hoa cẩm tú cầu xinh xắn, những hàng cây mai anh đào rực rỡ trong gió, thắng cảnh sông, hồ, núi hùng vĩ hay những con suối róc rách nước trẻ… và không khí mát mẻ, trong lành, Đà Lạt ngày càng thu hút đông đảo khách du lịch trong nước và quốc tế.",
       price: "8.000.000",
       timedi: "15/03/2024",
@@ -21,12 +21,12 @@ var tour =[
 
    {
       id: 3,
-      name: "ĐÀ NẴNG",
-      content: "Mệnh danh là thành phố đáng sống nhất ở Việt Nam,  được tạo hóa ưu ái ban tặng đường bờ biển xanh lấp lánh ôm lấy bờ cát trắng mịn cùng nhiều hòn đảo xa bờ, nơi sở hữu thảm xanh thiên nhiên ấn tượng. Đà Nẵng là một trong những thành phố du lịch phát triển mạnh mẽ nhất tại Việt Nam. Với nhiều địa danh nổi tiếng như Bà Nà Hills, Cầu Rồng hay bãi biển Mỹ Khê, Đà Nẵng đã thu hút đông đảo khách du lịch trong và ngoài nước. Nếu bạn đang có kế hoạch tự túc khám phá Đà Nẵng, bài viết này sẽ cung cấp cho bạn một số thông tin hữu ích về điều cần biết khi đi du lịch Đà Nẵng tự túc.",
+      name: " THÁI LAN",
+      content: "Thái Lan là một đất nước xinh đẹp nổi tiếng với nền văn hóa giàu bản sắc dân tộc. Từ cử chỉ chào hỏi, đến cảm ơn, xin lỗi, tạm biệt đều có chung một động tác là chắp tay trước ngực giống như cầu nguyện và cúi đầu. Bạn có thể gặp hình ảnh những thiếu nữ Thái duyên dáng trong trang phục cổ truyền nhẹ nhàng cười với du khách để rồi Thái Lan được gắn với cái tên “xứ sở của những nụ cười”. Trên 90% người dân tại quốc gia này theo đạo Phật. Đây là địa điểm đáng để chúng ta khám phá sự mới mẻ của vùng đất này.",
       price: "12.000.000",
       timedi: "20/03/2024",
       timeve: "26/03/2024",
-      image: "https://res.klook.com/image/upload/fl_lossy.progressive,w_800,c_fill,q_85/destination/ur2mrg23d91mex03l4mw.jpg"
+      image: "https://www.bing.com/th?id=OIP.grcBEn-FD8UN7Ahdwj2MugHaEc&w=176&h=185&c=8&rs=1&qlt=90&o=6&dpr=1.5&pid=3.1&rm=2"
    },
 ];
 
@@ -47,7 +47,7 @@ function Show() {
       html += "<td>"+tour[i].timeve+"</td>";
       html += "<td>"
       html += '<button class="btn btn-primary bt1" onclick="editTour(' + i + ')">Edit</button>'
-      html += '<button class="btn btn-primary " onclick="deleteProduct()">Delete</button>'
+      html += '<button class="btn btn-primary " onclick="deleteProduct(' + i + ')">Delete</button>'
       html += "</td>"
       html += "</tr>";
   }
@@ -55,13 +55,10 @@ function Show() {
 }
 
 function createNewTour() {
-  var imageInput = document.getElementById("image");
-  var imageFile = imageInput.files[0];
-  var imageURL = URL.createObjectURL(imageFile);
     var a = {
         id: document.getElementById('id').value,
         name: document.getElementById('name').value,
-        image: imageURL,
+        image: document.getElementById('image').value,
         content: document.getElementById('content').value,
         price: document.getElementById('price').value,
         timedi: document.getElementById('timedi').value,
@@ -75,7 +72,7 @@ function createNewTour() {
   function Reset() {
     document.getElementById('id').value = '';
     document.getElementById('name').value = '';
-    image: imageURL= '';
+    document.getElementById('image').value = '';
     document.getElementById('content').value = '';
     document.getElementById('price').value = '';
     document.getElementById("timedi").value='';
@@ -86,7 +83,7 @@ function editTour(index) {
     document.getElementById("editId").value = tour[index].id;
     document.getElementById("editName").value = tour[index].name;
     document.getElementById("editContent").value = tour[index].content;
-    document.getElementById("editImage").src = tour[index].image;
+    document.getElementById("editImage").value = tour[index].image;
     document.getElementById("editPrice").value = tour[index].price;
     document.getElementById("editTimedi").value = tour[index].timedi;
     document.getElementById("editTimeve").value = tour[index].timeve;
@@ -99,23 +96,21 @@ function editTour(index) {
   function updateTour(index) {
     var newId = document.getElementById("editId").value;
     var newName = document.getElementById("editName").value;
-    var newImageInput = document.getElementById("editImage");
-    var newImageFile = newImageInput.files[0];
-    var newImageURL = URL.createObjectURL(newImageFile);
+    var newImage = document.getElementById("editImage").value;
     var newContext = document.getElementById("editContent").value;
     var newPrice = document.getElementById("editPrice").value;
-    var newTimedi = document.getElementById("editTimedi").value;
+    var newTimedi= document.getElementById("editTimedi").value;
     var newTimeve = document.getElementById("editTimeve").value;
     var indexToUpdate = index;
-  
+
+    console.log(index)
     tour[indexToUpdate].id = newId;
     tour[indexToUpdate].name = newName;
-    tour[indexToUpdate].image = newImageURL;
+    tour[indexToUpdate].image = newImage;
     tour[indexToUpdate].content = newContext;
     tour[indexToUpdate].price = newPrice;
     tour[indexToUpdate].timedi = newTimedi;
     tour[indexToUpdate].timeve = newTimeve;
-  
     document.getElementById("editForm").style.display = "none";
     Show();
   }
